@@ -28,11 +28,11 @@ import { requestBudgetData } from './../../ducks/budgetReducer'
             <div className='content-container'>
               <div className="purchases-container">
                 <AddPurchase />
-                <DisplayPurchases />
+                <DisplayPurchases purchases={purchases} />
               </div>
               <div className='chart-container'>
-                <Chart1 />
-                <Chart2 />
+                <Chart1 purchases={purchases} budgetLimit={budgetLimit} />
+                <Chart2 purchases={purchases} />
               </div>
             </div>
           </div>

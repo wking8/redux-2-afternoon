@@ -18,6 +18,9 @@ export function requestBudgetData() {
         payload: data
     }
 }
+export const addPurchase = () => {
+    let data = axios.post
+}
 
 // Reducer
 export default function reducer(state = initialState, action) {
